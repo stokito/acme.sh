@@ -202,7 +202,7 @@ _get_zone() {
 
 }
 
-#Usage: privatekey
+#Agrgs: privatekey
 #Output MD5 fingerprint
 _fingerprint() {
 

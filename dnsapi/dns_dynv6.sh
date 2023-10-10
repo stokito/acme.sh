@@ -62,7 +62,6 @@ dns_dynv6_rm() {
   fi
 }
 #################### Private functions below ##################################
-#Usage: No Input required
 #returns
 #dynv6_keyfile the path to the new key file that has been generated
 _generate_new_key() {
@@ -77,7 +76,7 @@ _generate_new_key() {
   fi
 }
 
-#Usage: _acme-challenge.www.example.dynv6.net "$_your_hosts"
+#Args: _acme-challenge.www.example.dynv6.net "$_your_hosts"
 #where _your_hosts is the output of ssh -i ~/.ssh/dynv6.pub api@dynv6.com hosts
 #returns
 #_host= example.dynv6.net
@@ -171,7 +170,7 @@ _dns_dynv6_rm_http() {
 }
 
 #get the zoneid for a specifc record or zone
-#usage: _get_zone_id §record
+#Args: _get_zone_id §record
 #where $record is the record to get the id for
 #returns _zone_id the id of the zone
 _get_zone_id() {
@@ -208,7 +207,7 @@ _get_zone_name() {
   _zone_name="${_zone_name#name:}"
 }
 
-#usaage _get_record_id $zone_id $record
+#Args: _get_record_id $zone_id $record
 # where zone_id is thevalue returned by _get_zone_id
 # and record ist in the form _acme.www for an fqdn of _acme.www.example.com
 # returns _record_id
@@ -234,7 +233,8 @@ _get_record_id_from_response() {
   _debug "record id: $_record_id"
   return 0
 }
-#usage: _set_record TXT _acme_challenge.www longvalue 12345678
+
+#Args: _set_record TXT _acme_challenge.www longvalue 12345678
 #zone id is optional can also be set as vairable bevor calling this method
 _set_record() {
   type="$1"

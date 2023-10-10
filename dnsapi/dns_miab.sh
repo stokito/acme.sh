@@ -89,7 +89,7 @@ dns_miab_rm() {
 
 ####################  Private functions below ##################################
 #
-#Usage: _get_root  _acme-challenge.www.domain.com
+#Args: _get_root  _acme-challenge.www.domain.com
 #Returns:
 # _sub_domain=_acme-challenge.www
 # _domain=domain.com
@@ -134,7 +134,7 @@ _get_root() {
   return 1
 }
 
-#Usage: _retrieve_miab_env
+#Args: _retrieve_miab_env
 #Returns (from store or environment variables):
 # MIAB_Username
 # MIAB_Password
@@ -200,7 +200,7 @@ _miab_rest() {
   return 0
 }
 
-#Usage: _is_json  "\[\n   "mydomain.com"\n]"
+#Args: _is_json  "\[\n   "mydomain.com"\n]"
 #Reurns "\[\n   "mydomain.com"\n]"
 #returns the string if it begins and ends with square braces
 _is_json() {

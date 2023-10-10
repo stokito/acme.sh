@@ -17,8 +17,6 @@
 #
 # username/password and csrftoken/sessionid cookies are saved in ~/.acme.sh/account.conf
 
-# Usage: dns_1984hosting_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Add a text record.
 dns_1984hosting_add() {
   fulldomain=$1
   txtvalue=$2

@@ -134,7 +134,7 @@ _get_root() {
   return 1
 }
 
-#Usage: method  URI  data
+#Agrs: method URI data
 _rest() {
   m="$1"
   ep="$2"

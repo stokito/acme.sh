@@ -106,7 +106,7 @@ _ddnss_get_domain() {
   return 0
 }
 
-#Usage: method URI
+#Agrs: method URI
 _ddnss_rest() {
   method=$1
   param="$2"

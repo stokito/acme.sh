@@ -355,7 +355,7 @@ _namecheap_reset_hostList() {
   _hostrequest=""
 }
 
-#Usage: _namecheap_add_host HostName RecordType Address MxPref TTL
+#Args: _namecheap_add_host HostName RecordType Address MxPref TTL
 _namecheap_add_host() {
   _hostindex=$(_math "$_hostindex" + 1)
   _hostrequest=$(printf '%s&HostName%d=%s&RecordType%d=%s&Address%d=%s&MXPref%d=%d&TTL%d=%d' "$_hostrequest" "$_hostindex" "$1" "$_hostindex" "$2" "$_hostindex" "$3" "$_hostindex" "$4" "$_hostindex" "$5")

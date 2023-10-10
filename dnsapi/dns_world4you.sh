@@ -10,7 +10,6 @@ RECORD=''
 
 ################ Public functions ################
 
-# Usage: dns_world4you_add <fqdn> <value>
 dns_world4you_add() {
   fqdn=$(echo "$1" | _lower_case)
   value="$2"

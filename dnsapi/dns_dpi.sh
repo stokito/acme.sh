@@ -79,7 +79,7 @@ dns_dpi_rm() {
 }
 
 #add the txt record.
-#usage: root  sub  txtvalue
+#Args: root sub txtvalue
 add_record() {
   root=$1
   sub=$2
@@ -134,7 +134,7 @@ _get_root() {
   return 1
 }
 
-#Usage: method  URI  data
+#Args: method URI data
 _rest() {
   m="$1"
   ep="$2"

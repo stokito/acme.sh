@@ -8,9 +8,6 @@
 #  - $GEOSCALING_Username  (your Geoscaling username - this is usually NOT an amail address)
 #  - $GEOSCALING_Password  (your Geoscaling password)
 
-#-- dns_geoscaling_add() - Add TXT record --------------------------------------
-# Usage: dns_geoscaling_add _acme-challenge.subdomain.domain.com "XyZ123..."
-
 dns_geoscaling_add() {
   full_domain=$1
   txt_value=$2
@@ -49,9 +46,6 @@ dns_geoscaling_add() {
   do_logout
   return "${exit_code}"
 }
-
-#-- dns_geoscaling_rm() - Remove TXT record ------------------------------------
-# Usage: dns_geoscaling_rm _acme-challenge.subdomain.domain.com "XyZ123..."
 
 dns_geoscaling_rm() {
   full_domain=$1
@@ -145,7 +139,6 @@ do_post() {
 }
 
 do_login() {
-
   _info "Logging in..."
 
   username_encoded="$(printf "%s" "${GEOSCALING_Username}" | _url_encode)"
@@ -229,4 +222,3 @@ find_zone() {
     strip_counter=$(_math "${strip_counter}" + 1)
   done
 }
-# vim: et:ts=2:sw=2:

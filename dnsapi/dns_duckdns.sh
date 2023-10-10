@@ -103,7 +103,7 @@ _duckdns_get_domain() {
   return 0
 }
 
-#Usage: method URI
+#Args: method URI
 _duckdns_rest() {
   method=$1
   param="$2"

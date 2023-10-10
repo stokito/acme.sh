@@ -148,7 +148,7 @@ _get_root() {
   return 1
 }
 
-#Usage: method  URI  data
+#Ars: method URI data
 _internetbs_rest() {
   m="$1"
   ep="$2"

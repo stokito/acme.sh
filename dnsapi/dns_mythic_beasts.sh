@@ -53,7 +53,6 @@ dns_mythic_beasts_add() {
   return 1
 }
 
-#Usage: rm  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_mythic_beasts_rm() {
   fulldomain=$1
   txtvalue=$2

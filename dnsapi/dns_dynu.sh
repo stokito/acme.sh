@@ -62,7 +62,6 @@ dns_dynu_add() {
   return 0
 }
 
-#Usage: rm _acme-challenge.www.domain.com "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_dynu_rm() {
   fulldomain=$1
   txtvalue=$2

@@ -131,7 +131,7 @@ _get_root() {
   return 1
 }
 
-#Usage:  URI
+#Args:  URI
 _la_rest() {
   url="$LA_Api/$1"
   _debug "$url"
