@@ -17,7 +17,6 @@ _JD_HOST="$_JD_PROD.$_JD_API"
 
 ########  Public functions #####################
 
-#Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_jd_add() {
   fulldomain=$1
   txtvalue=$2

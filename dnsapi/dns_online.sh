@@ -9,7 +9,6 @@
 
 ONLINE_API="https://api.online.net/api/v1"
 
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_online_add() {
   fulldomain=$1
   txtvalue=$2

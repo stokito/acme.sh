@@ -33,7 +33,6 @@ DYN_API="https://api.dynect.net/REST"
 #REST_API
 ########  Public functions #####################
 
-#Usage: add  _acme-challenge.www.domain.com   "Challenge-code"
 dns_dyn_add() {
   fulldomain="$1"
   txtvalue="$2"
@@ -83,8 +82,6 @@ dns_dyn_add() {
   return 0
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_dyn_rm() {
   fulldomain="$1"
   txtvalue="$2"

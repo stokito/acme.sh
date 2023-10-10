@@ -13,7 +13,6 @@
 # Set 1 for insecure and 0 for secure -> difference is whether ssl cert is checked for validity (0) or whether it is just accepted (1)
 
 ########  Public functions #####################
-#Usage: add _acme-challenge.www.domain.com "123456789ABCDEF0000000000000000000000000000000000000"
 #fulldomain
 #txtvalue
 OPNs_DefaultPort=443

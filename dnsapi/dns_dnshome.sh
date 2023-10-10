@@ -12,7 +12,6 @@
 # export DNSHOME_SubdomainPassword=""
 
 # Usage: add subdomain.ddnsdomain.tld "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 dns_dnshome_add() {
   txtvalue=$2
 

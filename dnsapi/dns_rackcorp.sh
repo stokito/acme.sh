@@ -43,8 +43,6 @@ dns_rackcorp_add() {
   return 0
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_rackcorp_rm() {
   fulldomain=$1
   txtvalue=$2

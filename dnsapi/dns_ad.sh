@@ -12,7 +12,6 @@ AD_API_URL="https://$AD_API_KEY:@api.alwaysdata.com/v1"
 
 ########  Public functions #####################
 
-#Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_ad_add() {
   fulldomain=$1
   txtvalue=$2

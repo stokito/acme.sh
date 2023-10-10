@@ -29,7 +29,6 @@
 ########  Public functions #####################
 
 # Usage: dns_myapi_add  _acme-challenge.www.example.com  "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 dns_da_add() {
   fulldomain="${1}"
   txtvalue="${2}"

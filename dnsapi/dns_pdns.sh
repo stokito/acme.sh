@@ -11,7 +11,6 @@
 DEFAULT_PDNS_TTL=60
 
 ########  Public functions #####################
-#Usage: add _acme-challenge.www.domain.com "123456789ABCDEF0000000000000000000000000000000000000"
 #fulldomain
 #txtvalue
 dns_pdns_add() {

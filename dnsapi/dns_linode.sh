@@ -6,7 +6,6 @@ LINODE_API_URL="https://api.linode.com/?api_key=$LINODE_API_KEY&api_action="
 
 ########  Public functions #####################
 
-#Usage: dns_linode_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_linode_add() {
   fulldomain="${1}"
   txtvalue="${2}"
@@ -45,7 +44,6 @@ dns_linode_add() {
   return 1
 }
 
-#Usage: dns_linode_rm   _acme-challenge.www.domain.com
 dns_linode_rm() {
   fulldomain="${1}"
 

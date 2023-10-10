@@ -28,7 +28,6 @@
 # export BOOKMYNAME_PASSWORD="MyPassword"
 # /usr/local/ssl/acme.sh/acme.sh --dns dns_bookmyname --dnssleep 600 --issue -d domain.tld
 
-#Usage: dns_bookmyname_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_bookmyname_add() {
   fulldomain=$1
   txtvalue=$2
@@ -63,8 +62,6 @@ dns_bookmyname_add() {
 
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_bookmyname_rm() {
   fulldomain=$1
   txtvalue=$2

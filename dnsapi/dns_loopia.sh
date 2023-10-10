@@ -11,7 +11,6 @@ LOOPIA_Api_Default="https://api.loopia.se/RPCSERV"
 
 ########  Public functions #####################
 
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_loopia_add() {
   fulldomain=$1
   txtvalue=$2

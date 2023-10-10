@@ -11,7 +11,6 @@ REST_API="https://desec.io/api/v1/domains"
 
 ########  Public functions #####################
 
-#Usage: dns_desec_add   _acme-challenge.foobar.dedyn.io   "d41d8cd98f00b204e9800998ecf8427e"
 dns_desec_add() {
   fulldomain=$1
   txtvalue=$2
@@ -73,8 +72,6 @@ dns_desec_add() {
   return 1
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_desec_rm() {
   fulldomain=$1
   txtvalue=$2

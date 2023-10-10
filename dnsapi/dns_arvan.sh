@@ -8,7 +8,6 @@ ARVAN_API_URL="https://napi.arvancloud.ir/cdn/4.0/domains"
 #
 ########  Public functions #####################
 
-#Usage: dns_arvan_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_arvan_add() {
   fulldomain=$1
   txtvalue=$2
@@ -52,8 +51,6 @@ dns_arvan_add() {
   return 0
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_arvan_rm() {
   fulldomain=$1
   txtvalue=$2

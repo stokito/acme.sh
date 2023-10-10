@@ -2,7 +2,6 @@
 
 ########  Public functions #####################
 
-#Usage: dns_knot_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_knot_add() {
   fulldomain=$1
   txtvalue=$2
@@ -37,7 +36,6 @@ EOF
   return 0
 }
 
-#Usage: dns_knot_rm   _acme-challenge.www.domain.com
 dns_knot_rm() {
   fulldomain=$1
   _checkKey || return 1

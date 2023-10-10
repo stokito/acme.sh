@@ -6,7 +6,6 @@ FORNEX_API_URL="https://fornex.com/api/dns/v0.1"
 
 ########  Public functions #####################
 
-#Usage: dns_fornex_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_fornex_add() {
   fulldomain=$1
   txtvalue=$2
@@ -34,7 +33,6 @@ dns_fornex_add() {
   return 1
 }
 
-#Usage: dns_fornex_rm   _acme-challenge.www.domain.com
 dns_fornex_rm() {
   fulldomain=$1
   txtvalue=$2

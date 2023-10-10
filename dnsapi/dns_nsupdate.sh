@@ -2,7 +2,6 @@
 
 ########  Public functions #####################
 
-#Usage: dns_nsupdate_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_nsupdate_add() {
   fulldomain=$1
   txtvalue=$2
@@ -47,7 +46,6 @@ EOF
   return 0
 }
 
-#Usage: dns_nsupdate_rm   _acme-challenge.www.domain.com
 dns_nsupdate_rm() {
   fulldomain=$1
 

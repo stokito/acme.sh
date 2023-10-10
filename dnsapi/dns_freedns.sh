@@ -17,7 +17,6 @@
 # login cookie is saved in acme account config file so userid / pw
 # need to be set only when changed.
 
-#Usage: dns_freedns_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_freedns_add() {
   fulldomain="$1"
   txtvalue="$2"
@@ -81,8 +80,6 @@ dns_freedns_add() {
   return $?
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_freedns_rm() {
   fulldomain="$1"
   txtvalue="$2"

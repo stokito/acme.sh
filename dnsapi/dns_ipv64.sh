@@ -13,7 +13,6 @@ IPv64_API="https://ipv64.net/api"
 
 ########  Public functions ######################
 
-#Usage: dns_ipv64_add _acme-challenge.domain.ipv64.net "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_ipv64_add() {
   fulldomain=$1
   txtvalue=$2
@@ -51,9 +50,6 @@ dns_ipv64_add() {
 
 }
 
-#Usage: fulldomain txtvalue
-#Usage: dns_ipv64_rm _acme-challenge.domain.ipv64.net "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-#Remove the txt record after validation.
 dns_ipv64_rm() {
   fulldomain=$1
   txtvalue=$2

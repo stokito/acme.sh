@@ -8,7 +8,6 @@
 
 LSW_API="https://api.leaseweb.com/hosting/v2/domains"
 
-#Usage: dns_leaseweb_add   _acme-challenge.www.domain.com
 dns_leaseweb_add() {
   fulldomain=$1
   txtvalue=$2
@@ -47,8 +46,6 @@ dns_leaseweb_add() {
   return 1
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_leaseweb_rm() {
   fulldomain=$1
   txtvalue=$2

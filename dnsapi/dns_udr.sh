@@ -15,7 +15,6 @@ UDR_TTL="30"
 
 ########  Public functions #####################
 
-#Usage: add _acme-challenge.www.domain.com "some_long_string_of_characters_go_here_from_lets_encrypt"
 dns_udr_add() {
   fulldomain=$1
   txtvalue=$2

@@ -14,7 +14,6 @@ DEFAULT_RCODE0_URL="https://my.rcodezero.at"
 DEFAULT_RCODE0_TTL=60
 
 ########  Public functions #####################
-#Usage: add _acme-challenge.www.domain.com "123456789ABCDEF0000000000000000000000000000000000000"
 #fulldomain
 #txtvalue
 dns_rcode0_add() {

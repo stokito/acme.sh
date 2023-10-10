@@ -16,7 +16,6 @@ DDNSS_DNS_API="https://ddnss.de/upd.php"
 
 ########  Public functions #####################
 
-#Usage: dns_ddnss_add _acme-challenge.domain.ddnss.de "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_ddnss_add() {
   fulldomain=$1
   txtvalue=$2
@@ -57,8 +56,6 @@ dns_ddnss_add() {
   fi
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_ddnss_rm() {
   fulldomain=$1
   txtvalue=$2

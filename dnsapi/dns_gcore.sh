@@ -9,7 +9,6 @@ GCORE_Doc="https://apidocs.gcore.com/dns"
 
 ########  Public functions #####################
 
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_gcore_add() {
   fulldomain=$1
   txtvalue=$2

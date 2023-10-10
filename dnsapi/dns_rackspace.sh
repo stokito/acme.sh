@@ -13,7 +13,6 @@ RACKSPACE_Endpoint="https://dns.api.rackspacecloud.com/v1.0"
 # Original - tcocca:rackspace_dnsapi https://github.com/acmesh-official/acme.sh/pull/1297
 
 ########  Public functions #####################
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_rackspace_add() {
   fulldomain="$1"
   _debug fulldomain="$fulldomain"

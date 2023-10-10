@@ -17,7 +17,6 @@
 
 MYDNSJP_API="https://www.mydns.jp"
 
-#Usage: dns_mydnsjp_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_mydnsjp_add() {
   fulldomain=$1
   txtvalue=$2
@@ -64,8 +63,6 @@ dns_mydnsjp_add() {
   return 1
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_mydnsjp_rm() {
   fulldomain=$1
   txtvalue=$2

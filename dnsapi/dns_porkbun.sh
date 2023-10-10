@@ -8,7 +8,6 @@ PORKBUN_Api="https://porkbun.com/api/json/v3"
 
 ########  Public functions #####################
 
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_porkbun_add() {
   fulldomain=$1
   txtvalue=$2

@@ -15,7 +15,6 @@
 
 GANDI_LIVEDNS_API="https://dns.api.gandi.net/api/v5"
 
-#Usage: dns_gandi_livedns_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_gandi_livedns_add() {
   fulldomain=$1
   txtvalue=$2
@@ -48,8 +47,6 @@ dns_gandi_livedns_add() {
   _dns_gandi_append_record "$_domain" "$_sub_domain" "$txtvalue"
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_gandi_livedns_rm() {
   fulldomain=$1
   txtvalue=$2

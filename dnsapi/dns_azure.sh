@@ -5,7 +5,6 @@ WIKI="https://github.com/acmesh-official/acme.sh/wiki/How-to-use-Azure-DNS"
 ########  Public functions #####################
 
 # Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 #
 # Ref: https://docs.microsoft.com/en-us/rest/api/dns/recordsets/createorupdate
 #

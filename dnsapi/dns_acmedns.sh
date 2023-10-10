@@ -15,8 +15,6 @@
 #
 ########  Public functions #####################
 
-#Usage: dns_acmedns_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 dns_acmedns_add() {
   fulldomain=$1
   txtvalue=$2
@@ -78,11 +76,8 @@ dns_acmedns_add() {
     _err "invalid response of acme-dns"
     return 1
   fi
-
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_acmedns_rm() {
   fulldomain=$1
   txtvalue=$2

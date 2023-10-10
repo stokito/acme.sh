@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-#Usage: dns_maradns_add _acme-challenge.www.domain.com "token"
 dns_maradns_add() {
   fulldomain="$1"
   txtvalue="$2"
@@ -18,7 +17,6 @@ dns_maradns_add() {
   _reload_maradns "$MARA_DUENDE_PID_PATH" || return 1
 }
 
-#Usage: dns_maradns_rm _acme-challenge.www.domain.com "token"
 dns_maradns_rm() {
   fulldomain="$1"
   txtvalue="$2"

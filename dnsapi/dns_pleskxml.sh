@@ -64,7 +64,6 @@ pleskxml_tplt_rmv_dns_record="<packet><dns><del_rec><filter><id>%s</id></filter>
 
 ####################  Public functions ##################################
 
-#Usage: dns_pleskxml_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_pleskxml_add() {
   fulldomain=$1
   txtvalue=$2
@@ -112,7 +111,6 @@ dns_pleskxml_add() {
   return 0
 }
 
-#Usage: dns_pleskxml_rm   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_pleskxml_rm() {
   fulldomain=$1
   txtvalue=$2

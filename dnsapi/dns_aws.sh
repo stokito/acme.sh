@@ -16,7 +16,6 @@ AWS_WIKI="https://github.com/acmesh-official/acme.sh/wiki/How-to-use-Amazon-Rout
 
 ########  Public functions #####################
 
-#Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_aws_add() {
   fulldomain=$1
   txtvalue=$2

@@ -22,7 +22,6 @@ DEFAULT_INFOMANIAK_TTL=300
 
 ########  Public functions #####################
 
-#Usage: dns_infomaniak_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_infomaniak_add() {
 
   INFOMANIAK_API_TOKEN="${INFOMANIAK_API_TOKEN:-$(_readaccountconf_mutable INFOMANIAK_API_TOKEN)}"
@@ -95,8 +94,6 @@ dns_infomaniak_add() {
   return 1
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_infomaniak_rm() {
 
   INFOMANIAK_API_TOKEN="${INFOMANIAK_API_TOKEN:-$(_readaccountconf_mutable INFOMANIAK_API_TOKEN)}"

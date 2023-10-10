@@ -16,7 +16,6 @@ OPENPROVIDER_API="https://api.openprovider.eu/"
 
 ########  Public functions #####################
 
-#Usage: dns_openprovider_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_openprovider_add() {
   fulldomain="$1"
   txtvalue="$2"
@@ -92,8 +91,6 @@ dns_openprovider_add() {
   return 0
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_openprovider_rm() {
   fulldomain="$1"
   txtvalue="$2"

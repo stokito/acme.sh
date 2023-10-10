@@ -77,7 +77,6 @@ _lexicon_init() {
 
 ########  Public functions #####################
 
-#Usage: dns_lexicon_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_lexicon_add() {
   fulldomain=$1
   txtvalue=$2
@@ -96,7 +95,6 @@ dns_lexicon_add() {
 
 }
 
-#Usage: dns_lexicon_rm   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_lexicon_rm() {
   fulldomain=$1
   txtvalue=$2

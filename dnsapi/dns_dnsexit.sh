@@ -12,7 +12,6 @@ DNSEXIT_API_URL="https://api.dnsexit.com/dns/"
 DNSEXIT_HOSTS_URL="https://update.dnsexit.com/ipupdate/hosts.jsp"
 
 ########  Public functions #####################
-#Usage: dns_dnsexit_add   _acme-challenge.*.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_dnsexit_add() {
   fulldomain=$1
   txtvalue=$2
@@ -41,8 +40,6 @@ dns_dnsexit_add() {
   return 0
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_dnsexit_rm() {
   fulldomain=$1
   txtvalue=$2

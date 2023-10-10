@@ -6,7 +6,6 @@ TRANSIP_Token_Expiration="30 minutes"
 TRANSIP_Token_Label=""
 
 ########  Public functions #####################
-#Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_transip_add() {
   fulldomain="$1"
   _debug fulldomain="$fulldomain"

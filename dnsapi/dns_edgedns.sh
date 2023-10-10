@@ -24,7 +24,6 @@ ACME_EDGEDNS_VERSION="0.1.0"
 ########  Public functions #####################
 
 # Usage: dns_edgedns_add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 #
 dns_edgedns_add() {
   fulldomain=$1

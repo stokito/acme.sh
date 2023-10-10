@@ -8,7 +8,6 @@
 ULTRA_API="https://api.ultradns.com/v3/"
 ULTRA_AUTH_API="https://api.ultradns.com/v2/"
 
-#Usage: add _acme-challenge.www.domain.com "some_long_string_of_characters_go_here_from_lets_encrypt"
 dns_ultra_add() {
   fulldomain=$1
   txtvalue=$2

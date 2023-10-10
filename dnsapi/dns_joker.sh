@@ -27,7 +27,6 @@ JOKER_API="https://svc.joker.com/nic/replace"
 
 ########  Public functions #####################
 
-#Usage: dns_joker_add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_joker_add() {
   fulldomain=$1
   txtvalue=$2

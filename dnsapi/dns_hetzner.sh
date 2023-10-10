@@ -9,7 +9,6 @@ HETZNER_Api="https://dns.hetzner.com/api/v1"
 ########  Public functions #####################
 
 # Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 # Ref: https://dns.hetzner.com/api-docs/
 dns_hetzner_add() {
   full_domain=$1

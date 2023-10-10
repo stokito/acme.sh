@@ -10,7 +10,6 @@ dns_api="https://dns.ap-southeast-1.myhuaweicloud.com" # Should work
 ########  Public functions #####################
 
 # Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-# Used to add txt record
 #
 # Ref: https://support.huaweicloud.com/intl/zh-cn/api-dns/zh-cn_topic_0132421999.html
 #

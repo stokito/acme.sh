@@ -14,7 +14,6 @@
 
 ########  Public functions #####################
 
-#Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_ispconfig_add() {
   fulldomain="${1}"
   txtvalue="${2}"
@@ -22,7 +21,6 @@ dns_ispconfig_add() {
   _ISPC_credentials && _ISPC_login && _ISPC_getZoneInfo && _ISPC_addTxt
 }
 
-#Usage: dns_myapi_rm   _acme-challenge.www.domain.com
 dns_ispconfig_rm() {
   fulldomain="${1}"
   _debug "Calling: dns_ispconfig_rm() '${fulldomain}'"

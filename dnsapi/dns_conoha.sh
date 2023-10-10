@@ -4,7 +4,6 @@ CONOHA_DNS_EP_PREFIX_REGEXP="https://dns-service\."
 
 ########  Public functions #####################
 
-#Usage: dns_conoha_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_conoha_add() {
   fulldomain=$1
   txtvalue=$2
@@ -64,8 +63,6 @@ dns_conoha_add() {
   return 1
 }
 
-#Usage: fulldomain txtvalue
-#Remove the txt record after validation.
 dns_conoha_rm() {
   fulldomain=$1
   txtvalue=$2

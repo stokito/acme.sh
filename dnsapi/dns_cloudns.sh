@@ -13,7 +13,6 @@ DOMAIN_MASTER=
 
 ########  Public functions #####################
 
-#Usage: dns_cloudns_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_cloudns_add() {
   _info "Using cloudns"
 
@@ -45,7 +44,6 @@ dns_cloudns_add() {
   return 0
 }
 
-#Usage: dns_cloudns_rm   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_cloudns_rm() {
   _info "Using cloudns"
 
