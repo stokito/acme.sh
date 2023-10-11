@@ -65,14 +65,14 @@ dns_nsupdate_rm() {
   if [ -z "${NSUPDATE_ZONE}" ]; then
     nsupdate -k "${NSUPDATE_KEY}" $nsdebug <<EOF
 server ${NSUPDATE_SERVER}  ${NSUPDATE_SERVER_PORT}
-update delete ${fulldomain}. txt
+update delete ${fulldomain}. TXT
 send
 EOF
   else
     nsupdate -k "${NSUPDATE_KEY}" $nsdebug <<EOF
 server ${NSUPDATE_SERVER}  ${NSUPDATE_SERVER_PORT}
 zone ${NSUPDATE_ZONE}.
-update delete ${fulldomain}. txt
+update delete ${fulldomain}. TXT
 send
 EOF
   fi

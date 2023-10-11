@@ -19,13 +19,11 @@ dns_knot_add() {
 
   _info "Adding ${fulldomain}. 60 TXT \"${txtvalue}\""
 
-  knsupdate <<EOF
+  knsupdate -k "${KNOT_KEY}" <<EOF
 server ${KNOT_SERVER}
-key ${KNOT_KEY}
 zone ${_domain}.
 update add ${fulldomain}. 60 TXT "${txtvalue}"
 send
-quit
 EOF
 
   if [ $? -ne 0 ]; then
@@ -50,13 +48,11 @@ dns_knot_rm() {
 
   _info "Removing ${fulldomain}. TXT"
 
-  knsupdate <<EOF
+  knsupdate -k "${KNOT_KEY}" <<EOF
 server ${KNOT_SERVER}
-key ${KNOT_KEY}
 zone ${_domain}.
-update del ${fulldomain}. TXT
+update delete ${fulldomain}. TXT
 send
-quit
 EOF
 
   if [ $? -ne 0 ]; then
